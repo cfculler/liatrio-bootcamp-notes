@@ -1,0 +1,31 @@
+Network Information
+
+IPv4s are 4 numbers 0-255 (17.233.9.17)
+IPv6s are 8 groups of hex numbers (2001:0db8:0000:0042:0000:8a2e:0370:7334)
+localhost = 127.0.0.1
+
+Useful Ports
+SSH - port 22
+HTTP - 80
+HTTPS - port 443
+
+
+Subnets
+
+Subnets are cool as they add a level of abstraction below the base network, which adds security.
+They act as a tradeoff, however, between level of security and allowable traffic.
+
+
+Exercise
+Examine the network your computer is on and try to answer the following questions:
+
+What subnet is your computer on? - 255.255.255.0
+How many IP address are available on the subnet? - 255
+What is your computers IP address on the subnet?  - 192.168.0.42
+How did your computer get assigned that IP address? - dynamically via DHCP
+What is your computers public Internet IP address? (hint: google what is my ip) - 98.208.42.143
+How does the private subnet IP address of your computer and the public Internet IP address relate to each other?
+    "A public IP address identifies you to the wider internet so that all the information you're searching for can find you. 
+    A private IP address is used within a private network to connect securely to other devices within that same network."
+How does traffic get routed from the Internet to your computer?
+    "A router is usually connected between networks to route packets between them"

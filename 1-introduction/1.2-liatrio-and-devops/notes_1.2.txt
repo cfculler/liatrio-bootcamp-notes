@@ -1,0 +1,15 @@
+What does Liatrio do?
+
+Liatrio works hard with clients to help with their needs as efficiently as possible.
+As discussed in 1.1, we are there to assist with automation, testing, deployment and CI.
+
+"DevOps has revolutionized software development within the last couple decades. 
+At the turn of the century, it was common that development teams would work on independent pieces of a project, 
+which would ultimately have to be merged and compiled by a tech lead at the end of a project. This led to an 
+enormous problem. If code didn't merge together and function as expected, a team might not know until very late 
+in the development process, or even until after deploying. Since that time, developers have created processes and 
+tools to help build, test, and manage code throughout the life of a project. Those tools and processes help form 
+the foundation of what we know today as DevOps."
+
+Devops has helped reduced the need for excessive ensuring of developer consistency. Before, if developers weren't being consistent with each other,
+or causing bugs, it would be  nightmare to fix the mistakes when trying to merge. Now, automated testing can ensure each dev's progress is good before ever making it to merge.

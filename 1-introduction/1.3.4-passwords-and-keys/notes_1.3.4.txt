@@ -1,0 +1,53 @@
+Password management softwares:
+
+KeePass - manages your passwords for you so you only need to remember one
+
+Lastpass - a step up that incorporates browser extensions and password sharing
+
+1Password - main competitor to Lastpass. Growing popularity rapidly
+
+
+
+SSH Key Generation
+
+# Generate SSH keys. Use the default file and empty passphrase for the keys.
+ssh-keygen -b 4096
+
+# Copy public key to SSH server
+scp ~/.ssh/id_rsa.pub <HOST_NAME>:
+
+# SSH to host
+ssh <HOST_NAME>
+
+# Append public key to authorized_keys
+mkdir ~/.ssh
+cat id_rsa.pub >> ~/.ssh/authorized_keys
+rm id_rsa.pub
+
+
+Instead of running the above key generation, try using the ed25519 algorithm:
+ssh-keygen -t ed25519 then copy the file named id_ed25519.pub.
+Note that this only works when not using Azure VMs
+
+SSH Permissions
+
+.ssh/ needs a permission level of 0700, and 
+.ssh/authorized_keys needs a permission level of 0600 
+to authenticate properly. Permissions can be changed 
+using the chmod command.
+
+
+SSH Config Files
+
+# .ssh/config
+
+Host my_host
+    Hostname ec2-42-42-42-42.us-west-2.compute.amazonaws.com
+    User ec2-user
+    IdentityFile ~/.ssh/host_public_key.pub
+
+This can help you SSH without typing a password or needing to navigate to a PEM file
+
+
+SSH Key exchanges are a little time consuming to set up, but save a lot of
+time in the long run. They are more secure, but also can cause more issues should something go wrong.

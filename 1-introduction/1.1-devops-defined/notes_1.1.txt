@@ -1,0 +1,5 @@
+What is Devops?
+
+Put simply, Devops is a response to increased difficulty of launching, maintaining and updating software.
+Devops engineers step in to aid programmers automate their testing and deployment, which helps greatly with merges and version control.
+Devops is CONVENIENCE

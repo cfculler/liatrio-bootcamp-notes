@@ -1,0 +1,2 @@
+This section mainly goes over command line, vim and install tutorials.
+1.3.5 is definitely useful, as it involves networking info that I've never seen before.

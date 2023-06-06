@@ -1,0 +1,44 @@
+installation differences
+
+RHEL based distros, such as CentOS, use yum.
+Debian based distros, such as Ubuntu use apt.
+Arch uses pacman.
+Alpine uses apk.
+Macs can make use of Homebrew.
+
+
+Find package example (don't know the name of it)
+
+apt-cache search openjdk
+yum search openjdk
+brew search openjdk
+
+
+Install package example
+
+apt-get install openjdk-8-jdk
+yum install java-1.8.0-openjdk-devel
+brew cask install adoptopenjdk
+
+
+Check for updates
+
+apt-get update
+yum check-update
+
+brew update
+brew outdated
+
+
+Install updates
+
+apt-get upgrade
+yum update
+brew upgrade
+
+
+What does "brew leaves" do?
+The brew leaves command lists the packages you have downloaded that you can safely remove.
+In other words, on a dependency tree, these are the leaves at the end of the branches. Nothing is using it.
+
+Additionally, "brew cleanup" removes old versions of dependencies that are no longer in use.

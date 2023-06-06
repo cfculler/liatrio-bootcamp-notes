@@ -1,0 +1,34 @@
+cool vim shortcuts
+
+NORMAL mode
+i	Switches Vim to insert mode
+h or left arrow	Moves the cursor left one character
+j or down arrow	Moves the cursor down one line
+k or up arrow	Moves the cursor up one line
+l or right arrow	Moves the cursor right one character
+w	Move cursor to beginning of next word
+b	Move cursor to beginning of previous word
+e	Move cursor to end of next word
+0	Move cursor to the beginning of the line
+$	Move cursor to the end of the line
+yy	Copy current line into buffer
+p	Paste line in buffer
+
+INSERT mode
+i	Switch Vim to insert mode
+esc	Switch Vim to normal mode
+a	Moves the cursor after the current character and enters insert mode
+A	Moves the cursor to the end of the line and enters insert mode
+o	Inserts a newline below current line and enters insert mode
+O	Inserts a newline above current line and enters insert mode
+
+VISUAL mode
+v	Enter visual mode and mark selection start point
+y	Copy current selection into buffer
+d	Delete current selection
+
+COMMAND mode
+:	Insert Command Mode
+w	Save the file
+q	Quit Vim
+wq	Save and quit from Vim
