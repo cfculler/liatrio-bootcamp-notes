@@ -1,0 +1,38 @@
+node.js setup
+
+to initialize package.json, in working directory, run:
+
+npm init -y
+
+to set up specific packages, run:
+
+npm i express
+npm i octokit
+npm -i --save-dev nodemon
+
+to setup token exchange from github to node.js source, 
+
+1) make/copy a classic token in profile settings of GitHub
+2) populate the token into a .env file in the code base:
+	TOKEN = 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
+3) insert token into .js file:
+	import 'dotenv/config'
+
+	const octokit = new Octokit({ 
+    	    auth: process.env.TOKEN,
+  	});
+
+WHY ARE THESE APIs HELPFUL?
+Well, they are an integral step towards automation. From a single-user scoped lense, using an API makes no sense as you'd be much fast just using the GitHub UI, but let's say you want to make a bot to do some data gathering or mass repo production on a larger scaled GitHub org. That's where these APIs excell.
+
+
+POSSIBLE HELLO DEVOPS PROJECT
+Make a bot that can work in tandem with the bootcamp to auto-generate repos for apprentices at the click of a button on each step, and possibly even add a section to the bootcamp forcing them to understand said bot. It would ensure repos are made exactlyto Liatrio's specifications.
+
+REST vs GraphQL
+Rest is simpler, more consistent, but offers less choice for the user
+GraphQL offers more customization for the user and can perform tasks in far less API calls. The con of GraphQL is that if you don't know how to optimally use it, you can drastically hurt its complexity because it doesnt force you into a certain format like REST does.
+GraphQL is generally better IF you know what you're doing.
+
+REST - REpresentational State Transfer
+

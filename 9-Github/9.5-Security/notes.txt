@@ -1,0 +1,8 @@
+Navigate to the settings tab on a repo and then to the code security and analysis tab.
+Enable Dependabot, Code Scanning and Secret Scanning. You can then view their suggestions in the security notes.
+
+Dependabot sends you email notifications when there are security risks in your code or outdated dependency versions. It also generates PRs that you can approve to make the changes.
+Secret scanning makes sure there arent any exposed secrets in a repo and then blocks commits that contain them
+Code scanning offers more suggestions on how to fix possible security risks in your code
+
+It is generally a good idea to have all 3 features enabled on your repos.

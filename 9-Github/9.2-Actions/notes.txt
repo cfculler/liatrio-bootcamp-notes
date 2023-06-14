@@ -1,0 +1,9 @@
+Runners
+github hosted runners access vm's to operate.
+self hosted runners work off of your machine, so you can customize it more
+self hosted is more consistent across runs
+
+Data transfers
+you can use upload/download artifacts to use files to pass variables
+you can also inherit from job to job using the needs action
+you can also use the ENV to pass variables

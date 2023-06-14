@@ -1,0 +1,16 @@
+Hypervisors
+
+A hyperisor, or virtual machine monitor (VMM) is a layer of software, firmware, or hardware that creates, runs, and manages virtual machines.
+It stands as an interface between the physical host machine and the virtual environments (VMs), allocating resources such as processing power, memory, and storage from the host to the VMs.
+
+Different types of hypervisors
+1) bare-metal: run directly on hosts hardware
+2) hosted: run on os of the host machine
+
+Type 2 above promotes security and stability because problems in one VM will not affect others
+
+
+Golden Images
+
+Golden images, also called base images or image templates, are machine images with pre-configured operating systems.
+They can be used to easily and reliably create identical environments on different hardware or virtual machines.
